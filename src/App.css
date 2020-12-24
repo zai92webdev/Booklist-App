@@ -1,38 +1,50 @@
 .App {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1rem;
+}
+
+.App h1{
   text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 >span {
+  color: purple;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 1rem;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.App__form__notification{
+  position: absolute;
+  width: 100%;
+  bottom: -4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__form > label {
+  margin-bottom: 10px;
+}
+
+.App__form > input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  outline-width: 1px;
+  border: 1px solid rgba(128, 128, 128, 0.548);
+  outline: none;
+  padding: 10px;
+}
+
+.App__form > input:focus {
+  box-shadow: 0 0 5px 0.2px rgb(148, 148, 148);
+  border: 1.2px solid purple;
+}
+
+.App__table{
+  margin-top: 3.5rem;
 }
